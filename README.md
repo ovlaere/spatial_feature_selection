@@ -5,7 +5,12 @@ This project contains the data used for our research paper about feature selecti
 
 The contents of this project are:
 * features.txt - A sorted list of 301 968 features used in the paper
-* testfile.tar.gz - A compressed version of the Wikipedia testfile used in the paper
+* testfile.orig.tar.gz - A compressed version of the original Wikipedia test data
+* testfile.actual.tar.gz - A compressed version of the actual testfile used in the paper. This file contains the original Wikipedia test documents, matched to the set of features from Flickr we provide here. To this end, Flickr tags were matched for up to three consecutive words in the original text, e.g. the original test data ```buckingham palace road``` will be converted to  ```buckingham buckinghampalace buckinghampalaceroad palace road```.
+
+### Features
+
+The features in the list we publish, are gathered from a sample of 9.4 million geotagged Flickr photos. After extracting features that were used by at least 3 different users, we ended up with these 301 968 features. 
 
 ### Test set
 
